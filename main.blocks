@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="G$XKgFt0+wzi}Ai%1ii;">Player</variable><variable type="KIND_SpriteKind" id="qj*L{bE$aB{%p7E9GlpC">Projectile</variable><variable type="KIND_SpriteKind" id="$v`@X!$J^Dw1*3#CmA$t">Food</variable><variable type="KIND_SpriteKind" id="G4tEAhhhw/jrE%^#LS!w">Enemy</variable><variable id=",?3%n^rV+?OtXpTfnI!2">list</variable><variable id="`kD.BqY1Is6I%@{L6hIL">duck</variable><variable id="vv,qU^n)k;11:NX/!jQ4">mySprite</variable><variable id="jLiVC;~U(^XmrMeoMq9[">character_Images</variable><variable id="tQX=$PRSsiZ0FHW%=Y94">count</variable></variables><block type="pxt-on-start" x="0" y="0"><statement name="HANDLER"><block type="variables_set"><field name="VAR" id=",?3%n^rV+?OtXpTfnI!2">list</field><value name="VALUE"><block type="lists_create_with"><mutation items="3"/><value name="ADD0"><shadow type="math_number"><field name="NUM">1</field></shadow><block type="image_picker"><field name="image">sprites.castle.heroFrontAttack1</field></block></value><value name="ADD1"><shadow type="math_number"><field name="NUM">2</field></shadow><block type="image_picker"><field name="image">sprites.castle.heroFrontAttack2</field></block></value><value name="ADD2"><shadow type="math_number"><field name="NUM">3</field></shadow><block type="image_picker"><field name="image">sprites.castle.heroFrontAttack3</field></block></value></block></value><next><block type="variables_set"><field name="VAR" id="`kD.BqY1Is6I%@{L6hIL">duck</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow><block type="lists_index_get"><value name="LIST"><block type="variables_get"><field name="VAR" id=",?3%n^rV+?OtXpTfnI!2">list</field></block></value><value name="INDEX"><shadow type="math_number"><field name="NUM">0</field></shadow></value></block></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value></block></next></block></statement></block><block type="gameinterval" x="50" y="270"><value name="period"><shadow type="timePicker"><field name="ms">200</field></shadow></value><statement name="HANDLER"><block type="spritesetimage"><value name="sprite"><block type="variables_get"><field name="VAR" id="`kD.BqY1Is6I%@{L6hIL">duck</field></block></value><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow><block type="lists_index_get"><value name="LIST"><block type="variables_get"><field name="VAR" id="jLiVC;~U(^XmrMeoMq9[">character_Images</field></block></value><value name="INDEX"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="math_modulo"><value name="DIVIDEND"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get"><field name="VAR" id="tQX=$PRSsiZ0FHW%=Y94">count</field></block></value><value name="DIVISOR"><shadow type="math_number"><field name="NUM">1</field></shadow><block type="lists_length"><value name="VALUE"><block type="variables_get"><field name="VAR" id=",?3%n^rV+?OtXpTfnI!2">list</field></block></value></block></value></block></value></block></value><next><block type="variables_change"><field name="VAR" id="tQX=$PRSsiZ0FHW%=Y94">count</field><value name="VALUE"><shadow type="math_number"><field name="NUM">1</field></shadow></value></block></next></block></statement></block></xml>
